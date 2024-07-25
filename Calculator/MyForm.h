@@ -512,8 +512,7 @@ private: System::Void nine_Click(System::Object^ sender, System::EventArgs^ e) {
 	label1->Text = label1->Text + "9";
 }
 private: System::Void point_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (oper == 0)
-		label1->Text = "0";
+	if(! label1->Text->Contains("."))
 	label1->Text = label1->Text + ".";
 }
 };
